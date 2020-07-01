@@ -57,11 +57,17 @@ body{background-color: bisque}
 <img id="demo" onclick="myFunction()" class="skill" src="Background%20CSS.jpg" alt="background">
     
     </body>
-<script>
-    
+ <script>
+ 
+var change = 0
+
 function myFunction() {
-  document.getElementById("demo").src="Mine%20Example.jpg";
+  if( change == 0 ){
+   document.getElementById("demo").src="Mine%20Example.jpg";
+   change = 1;
+  }else{ 
+   document.getElementById("demo").src="Background%20CSS.jpg";
+   change = 0}
 }
-    
     </script>
 </html>
